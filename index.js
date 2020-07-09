@@ -13,7 +13,7 @@ var level = 0;
 
 
 //To start the game press any key from keyboard.
-$("button").keypress(function()
+$("button").click(function()
 {
 	if(!started)
 	{
