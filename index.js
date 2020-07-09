@@ -13,7 +13,7 @@ var level = 0;
 
 
 //To start the game press any key from keyboard.
-$(document).keypress(function()
+$("button").keypress(function()
 {
 	if(!started)
 	{
@@ -61,7 +61,7 @@ function animatePress(currentColour)
 
 
 //Collect clicked button information from user.
-$(".btn").on("click", function()
+$(".bttn").on("click", function()
 {
 	var userChosenColour = $(this).attr("id");
 	userClickedPattern.push(userChosenColour);
@@ -90,7 +90,8 @@ function checkAnswer(currentLevel)
 	{
 		playSound("wrong");
 		$("body").addClass("game-over");
-		$("h1").text("Game Over, Press Any Key to Restart");
+		$("h1").text("Game Over, Press Restart Button");
+		$("button").text("Restart");
 
 		setTimeout(function()
 		{
