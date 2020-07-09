@@ -8,13 +8,18 @@ width: 80%;
 margin:0 auto 60px;
 }
 
+.full-box{
+text-align:center;
+display: inline-block;
+}
+
 h1{
 font-family: 'Press Start 2P', cursive;
 font-size: 3rem;
 color: #FEF2BF;
 }
 
-.btn{
+.bttn{
 width: 180px;
 height:180px;
 border:10px solid black;
@@ -49,10 +54,35 @@ background-color: red;
 opacity: 0.8;
 }
 
+.btn-lg{
+padding:.4rem 3rem;
+font-weight: 500;
+border-radius: 15px;
+margin-top: 3%;
+}
+
+
+/*Media Query Section*/
 
 @media(max-width: 768px)
 {
 .container-heading h1{
 font-size: 2.8rem;
+}
+}
+
+@media(max-width: 499px)
+{
+.container-heading h1{
+font-size: 1.8rem;
+}
+
+.bttn{
+width: 100px;
+height: 100px;
+}
+
+.btn-lg{
+margin-top: 5%;
 }
 }
